@@ -8,6 +8,9 @@ mock/
 
 .DS_Store
 
+# IDEs
+.idea
+
 # Builds
 bin/
 roo-cline-*.vsix
@@ -36,3 +39,7 @@ logs
 
 # Vite development
 .vite-port
+
+# IntelliJ and Qodo plugin folders
+.idea/
+.qodo/
