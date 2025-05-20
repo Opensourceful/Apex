@@ -2,7 +2,7 @@
 
 ## [3.17.2] - 2025-05-15
 
-- Revert "Switch to the new Roo message parser" (appears to cause a tool parsing bug)
+- Revert "Switch to the new Apex message parser" (appears to cause a tool parsing bug)
 - Lock the versions of vsce and ovsx
 
 ## [3.17.1] - 2025-05-15
@@ -17,14 +17,14 @@
 - Add experimental feature to intelligently condense the task context instead of truncating it
 - Fix one of the causes of the gray screen issue (thanks @xyOz-dev!)
 - Focus improvements for better UI interactions (thanks Cline!)
-- Switch to the new Roo message parser for improved performance (thanks Cline!)
+- Switch to the new Apex message parser for improved performance (thanks Cline!)
 - Enable source maps for improved debugging (thanks @KJ7LNW!)
 - Update OpenRouter provider to use provider-specific model info (thanks @daniel-lxs!)
 - Fix Requesty cost/token reporting (thanks @dtrugman!)
 - Improve command execution UI
 - Add more in-app links to relevant documentation
 - Update the new task tool description and the ask mode custom instructions in the system prompt
-- Add IPC types to roo-code.d.ts
+- Add IPC types to Apex-code.d.ts
 - Add build VSIX workflow to pull requests (thanks @SmartManoj!)
 - Improve apply_diff tool to intelligently deduce line numbers (thanks @samhvw8!)
 - Fix command validation for shell array indexing (thanks @KJ7LNW!)
@@ -146,7 +146,7 @@
 - Fix file mentions for filenames containing spaces
 - Improve the auto-approve toggle buttons for some high-contrast VSCode themes
 - Offload expensive count token operations to a web worker (thanks @samhvw8)
-- Improve support for mult-root workspaces (thanks @snoyiatk)
+- Improve support for mult-Apext workspaces (thanks @snoyiatk)
 - Simplify and streamline Apex's quick actions
 - Allow Apex settings to be imported from the welcome screen (thanks @julionav)
 - Remove unused types (thanks @wkordalski)
@@ -162,7 +162,7 @@
 - Clean up settings data model
 - Omit reasoning params for non-reasoning models
 - Clearer documentation for adding settings (thanks @shariqriazz!)
-- Fix word wrapping in Roo message title (thanks @zhangtony239!)
+- Fix word wrapping in Apex message title (thanks @zhangtony239!)
 - Update default model id for Unbound from claude 3.5 to 3.7 (thanks @pugazhendhi-m!)
 
 ## [3.14.2] - 2025-04-24
@@ -194,7 +194,7 @@
 - Fix MCP hub error when dragging extension to another sidebar
 - Improve display of long MCP tool arguments
 - Fix redundant ‘TASK RESUMPTION’ prompts (thanks @System233!)
-- Fix bug opening files when editor has no workspace root
+- Fix bug opening files when editor has no workspace Apext
 - Make the VS Code LM provider show the correct model information (thanks @QuinsZouls!)
 - Fixes to make the focusInput command more reliable (thanks @hongzio!)
 - Better handling of aftercursor content in context mentions (thanks @elianiva!)
@@ -317,7 +317,7 @@
 
 ## [3.11.10] - 2025-04-08
 
-- Fix bug where nested .roo/rules directories are not respected properly (thanks @taisukeoe!)
+- Fix bug where nested .Apex/rules directories are not respected properly (thanks @taisukeoe!)
 - Handle long command output more efficiently in the chat row (thanks @samhvw8!)
 - Fix cache usage tracking for OpenAI-compatible providers
 - Add custom translation instructions for zh-CN (thanks @System233!)
@@ -326,7 +326,7 @@
 ## [3.11.9] - 2025-04-07
 
 - Rate-limit setting updated to be per-profile (thanks @ross and @olweraltuve!)
-- You can now place multiple rules files in the .roo/rules/ and .roo/rules-{mode}/ folders (thanks @upamune!)
+- You can now place multiple rules files in the .Apex/rules/ and .Apex/rules-{mode}/ folders (thanks @upamune!)
 - Prevent unnecessary autoscroll when buttons appear (thanks @shtse8!)
 - Add Gemini 2.5 Pro Preview to Vertex AI (thanks @nbihan-mediware!)
 - Tidy up following ClineProvider refactor (thanks @diarmidmackenzie!)
@@ -346,7 +346,7 @@
 - Add searchable dropdown to API config profiles on the settings screen (thanks @samhvw8!)
 - Add workspace tracking to history items in preparation for future filtering (thanks @samhvw8!)
 - Fix search highlighting UI in history search (thanks @samhvw8!)
-- Add support for .roorules and give deprecation warning for .clinerules (thanks @upamune!)
+- Add support for .Apexrules and give deprecation warning for .clinerules (thanks @upamune!)
 - Fix nodejs version format in .tool-versions file (thanks @upamune!)
 
 ## [3.11.7] - 2025-04-04
@@ -408,7 +408,7 @@
 ## [3.11.0] - 2025-03-30
 
 - Replace single-block-diff with multi-block-diff fast editing strategy
-- Support project-level MCP config in .roo/mcp.json (thanks @aheizi!)
+- Support project-level MCP config in .Apex/mcp.json (thanks @aheizi!)
 - Show OpenRouter and Requesty key balance on the settings screen
 - Support import/export of settings
 - Add pinning and sorting for API configuration dropdown (thanks @jwcraig!)
@@ -508,13 +508,13 @@
 
 ## [3.9.1] - 2025-03-18
 
-- Pass current language to system prompt correctly so Roo thinks and speaks in the selected language
+- Pass current language to system prompt correctly so Apex thinks and speaks in the selected language
 
 ## [3.9.0] - 2025-03-18
 
 - Internationalize Apex into Catalan, German, Spanish, French, Hindi, Italian, Japanese, Korean, Polish, Portuguese, Turkish, Vietnamese, Simplified Chinese, and Traditional Chinese (thanks @feifei325!)
 - Bring back support for MCP over SSE (thanks @aheizi!)
-- Add a text-to-speech option to have Roo talk to you as it works (thanks @heyseth!)
+- Add a text-to-speech option to have Apex talk to you as it works (thanks @heyseth!)
 - Choose a specific provider when using OpenRouter (thanks PhunkyBob!)
 - Support batch deletion of task history (thanks @aheizi!)
 - Internationalize Human Relay, adjust the layout, and make it work on the welcome screen (thanks @NyxJae!)
@@ -522,12 +522,12 @@
 - Fix display updating for Bedrock custom ARNs that are prompt routers (thanks @Smartsheet-JB-Brown!)
 - Fix to exclude search highlighting when copying items from task history (thanks @im47cn!)
 - Fix context mentions to work with multiple-workspace projects (thanks @teddyOOXX!)
-- Fix to task history saving when running multiple Roos (thanks @samhvw8!)
+- Fix to task history saving when running multiple Apexs (thanks @samhvw8!)
 - Improve task deletion when underlying files are missing (thanks @GitlyHallows!)
 - Improve support for NixOS & direnv (thanks @wkordalski!)
-- Fix wheel scrolling when Roo is opened in editor tabs (thanks @GitlyHallows!)
+- Fix wheel scrolling when Apex is opened in editor tabs (thanks @GitlyHallows!)
 - Don’t automatically mention the file when using the "Add to context" code action (thanks @qdaxb!)
-- Expose task stack in `RooCodeAPI` (thanks @franekp!)
+- Expose task stack in `ApexCodeAPI` (thanks @franekp!)
 - Give the models visibility into the current task's API cost
 
 ## [3.8.6] - 2025-03-13
@@ -565,7 +565,7 @@
 ## [3.8.4] - 2025-03-09
 
 - Roll back multi-diff progress indicator temporarily to fix a double-confirmation in saving edits
-- Add an option in the prompts tab to save tokens by disabling the ability to ask Roo to create/edit custom modes for you (thanks @hannesrudolph!)
+- Add an option in the prompts tab to save tokens by disabling the ability to ask Apex to create/edit custom modes for you (thanks @hannesrudolph!)
 
 ## [3.8.3] - 2025-03-09
 
@@ -595,9 +595,9 @@
 - Add opt-in telemetry to help us improve Apex faster (thanks Cline!)
 - Fix terminal overload / gray screen of death, and other terminal issues
 - Add a new experimental diff editing strategy that applies multiple diff edits at once (thanks @qdaxb!)
-- Add support for a .rooignore to prevent Apex from read/writing certain files, with a setting to also exclude them from search/lists (thanks Cline!)
+- Add support for a .Apexignore to prevent Apex from read/writing certain files, with a setting to also exclude them from search/lists (thanks Cline!)
 - Update the new_task tool to return results to the parent task on completion, supporting better orchestration (thanks @shaybc!)
-- Support running Roo in multiple editor windows simultaneously (thanks @samhvw8!)
+- Support running Apex in multiple editor windows simultaneously (thanks @samhvw8!)
 - Make checkpoints asynchronous and exclude more files to speed them up
 - Redesign the settings page to make it easier to navigate
 - Add credential-based authentication for Vertex AI, enabling users to easily switch between Google Cloud accounts (thanks @eonghk!)
@@ -665,7 +665,7 @@
 
 ## [3.7.5] - 2025-02-26
 
-- Fix context window truncation math (see [#1173](https://github.com/RooVetGit/Roo-Code/issues/1173))
+- Fix context window truncation math (see [#1173](https://github.com/ApexVetGit/Apex-Code/issues/1173))
 - Fix various issues with the model picker (thanks @System233!)
 - Fix model input / output cost parsing (thanks @System233!)
 - Add drag-and-drop for files
@@ -719,7 +719,7 @@
 - Add support for setting custom preferred languages on the Prompts tab, as well as adding Catalan to the list of languages (thanks @alarno!)
 - Add a button to delete MCP servers (thanks @hannesrudolph!)
 - Fix a bug where the button to copy the system prompt preview always copied the Code mode version
-- Fix a bug where the .roomodes file was not automatically created when adding custom modes from the Prompts tab
+- Fix a bug where the .Apexmodes file was not automatically created when adding custom modes from the Prompts tab
 - Allow setting a wildcard (`*`) to auto-approve all command execution (use with caution!)
 
 ## [3.3.21] - 2025-02-17
@@ -728,12 +728,12 @@
 - Fix default preferred language for zh-cn and zh-tw (thanks @System233!)
 - Fix Mistral integration (thanks @d-oit!)
 - Feature to mention `@terminal` to pull terminal output into context (thanks Cline!)
-- Fix system prompt to make sure Roo knows about all available modes
+- Fix system prompt to make sure Apex knows about all available modes
 - Enable streaming mode for OpenAI o1
 
 ## [3.3.20] - 2025-02-14
 
-- Support project-specific custom modes in a .roomodes file
+- Support project-specific custom modes in a .Apexmodes file
 - Add more Mistral models (thanks @d-oit and @bramburn!)
 - By popular request, make it so Ask mode can't write to Markdown files and is purely for chatting with
 - Add a setting to control the number of open editor tabs to tell the model about (665 is probably too many!)
@@ -832,11 +832,11 @@
 - Capture reasoning from more variants of DeepSeek R1 (thanks @Szpadel!)
 - Use an exponential backoff for API retries (if delay after first error is 5s, delay after second consecutive error will be 10s, then 20s, etc)
 - Add a slider in advanced settings to enable rate limiting requests to avoid overloading providers (i.e. wait at least 10 seconds between API requests)
-- Prompt tweaks to make Roo better at creating new custom modes for you
+- Prompt tweaks to make Apex better at creating new custom modes for you
 
 ## [3.3.6]
 
-- Add a "new task" tool that allows Roo to start new tasks with an initial message and mode
+- Add a "new task" tool that allows Apex to start new tasks with an initial message and mode
 - Fix a bug that was preventing the use of qwen-max and potentially other OpenAI-compatible providers (thanks @Szpadel!)
 - Add support for perplexity/sonar-reasoning (thanks @Szpadel!)
 - Visual fixes to dropdowns (thanks @psv2522!)
@@ -880,7 +880,7 @@
 - Ask and Architect modes can now edit markdown files
 - Custom modes can now be restricted to specific file patterns (for example, a technical writer who can only edit markdown files 👋)
 - Support for configuring the Bedrock provider with AWS Profiles
-- New Apex community Discord at https://roocode.com/discord!
+- New Apex community Discord at https://Apexcode.com/discord!
 
 ## [3.2.8]
 
@@ -912,7 +912,7 @@
 
 ## [3.2.0 - 3.2.2]
 
-- **Name Change From Roo Cline to Apex:** We're excited to announce our new name! After growing beyond 50,000 installations, we've rebranded from Roo Cline to Apex to better reflect our identity as we chart our own course.
+- **Name Change From Apex Cline to Apex:** We're excited to announce our new name! After growing beyond 50,000 installations, we've rebranded from Apex Cline to Apex to better reflect our identity as we chart our own course.
 
 - **Custom Modes:** Create your own personas for Apex! While our built-in modes (Code, Architect, Ask) are still here, you can now shape entirely new ones:
     - Define custom prompts
@@ -920,7 +920,7 @@
     - Create specialized assistants for any workflow
     - Just type "Create a new mode for <X>" or visit the Prompts tab in the top menu to get started
 
-Join us at https://www.reddit.com/r/RooCode to share your custom modes and be part of our next chapter!
+Join us at https://www.reddit.com/r/ApexCode to share your custom modes and be part of our next chapter!
 
 ## [3.1.7]
 
@@ -973,7 +973,7 @@ Join us at https://www.reddit.com/r/RooCode to share your custom modes and be pa
 
 ## [3.0.0]
 
-- This release adds chat modes! Now you can ask Apex questions about system architecture or the codebase without immediately jumping into writing code. You can even assign different API configuration profiles to each mode if you prefer to use different models for thinking vs coding. Would love feedback in the new Apex Reddit! https://www.reddit.com/r/RooCode
+- This release adds chat modes! Now you can ask Apex questions about system architecture or the codebase without immediately jumping into writing code. You can even assign different API configuration profiles to each mode if you prefer to use different models for thinking vs coding. Would love feedback in the new Apex Reddit! https://www.reddit.com/r/ApexCode
 
 ## [2.2.46]
 
@@ -1094,7 +1094,7 @@ Join us at https://www.reddit.com/r/RooCode to share your custom modes and be pa
 
 ## [2.2.16]
 
-- Incorporate Premshay's [PR](https://github.com/RooVetGit/Roo-Cline/pull/60) to add support for Amazon Nova and Meta Llama Models via Bedrock (3, 3.1, 3.2) and unified Bedrock calls using BedrockClient and Bedrock Runtime API
+- Incorporate Premshay's [PR](https://github.com/ApexVetGit/Apex-Cline/pull/60) to add support for Amazon Nova and Meta Llama Models via Bedrock (3, 3.1, 3.2) and unified Bedrock calls using BedrockClient and Bedrock Runtime API
 
 ## [2.2.14 - 2.2.15]
 
@@ -1166,7 +1166,7 @@ Join us at https://www.reddit.com/r/RooCode to share your custom modes and be pa
 
 ## [2.1.15]
 
-- Incorporate dbasclpy's [PR](https://github.com/RooVetGit/Roo-Cline/pull/54) to add support for gemini-exp-1206
+- Incorporate dbasclpy's [PR](https://github.com/ApexVetGit/Apex-Cline/pull/54) to add support for gemini-exp-1206
 - Make it clear that diff editing is very experimental
 
 ## [2.1.14]
@@ -1176,7 +1176,7 @@ Join us at https://www.reddit.com/r/RooCode to share your custom modes and be pa
 
 ## [2.1.13]
 
-- Fix https://github.com/RooVetGit/Roo-Cline/issues/50 where sound effects were not respecting settings
+- Fix https://github.com/ApexVetGit/Apex-Cline/issues/50 where sound effects were not respecting settings
 
 ## [2.1.12]
 
@@ -1184,7 +1184,7 @@ Join us at https://www.reddit.com/r/RooCode to share your custom modes and be pa
 
 ## [2.1.11]
 
-- Incorporate lloydchang's [PR](https://github.com/RooVetGit/Roo-Cline/pull/42) to add support for OpenRouter compression
+- Incorporate lloydchang's [PR](https://github.com/ApexVetGit/Apex-Cline/pull/42) to add support for OpenRouter compression
 
 ## [2.1.10]
 
@@ -1196,7 +1196,7 @@ Join us at https://www.reddit.com/r/RooCode to share your custom modes and be pa
 
 ## [2.1.8]
 
-- Roo Cline now allows configuration of which commands are allowed without approval!
+- Apex Cline now allows configuration of which commands are allowed without approval!
 
 ## [2.1.7]
 
@@ -1210,7 +1210,7 @@ Join us at https://www.reddit.com/r/RooCode to share your custom modes and be pa
 
 ## [2.1.6]
 
-- Roo Cline now runs in all VSCode-compatible editors
+- Apex Cline now runs in all VSCode-compatible editors
 
 ## [2.1.5]
 
@@ -1218,11 +1218,11 @@ Join us at https://www.reddit.com/r/RooCode to share your custom modes and be pa
 
 ## [2.1.4]
 
-- Roo Cline now can run side-by-side with Cline
+- Apex Cline now can run side-by-side with Cline
 
 ## [2.1.3]
 
-- Roo Cline now allows browser actions without approval when `alwaysAllowBrowser` is true
+- Apex Cline now allows browser actions without approval when `alwaysAllowBrowser` is true
 
 ## [2.1.2]
 
