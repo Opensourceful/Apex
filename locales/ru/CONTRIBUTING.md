@@ -46,7 +46,7 @@ Apex — проект, управляемый сообществом, и мы в
 ### 3. Присоединяйся к сообществу Apex
 
 - **Основной способ:** Присоединись к нашему [Discord](https://discord.gg/roocode) и отправь личное сообщение **Hannes Rudolph (`hrudolph`)**.
-- **Альтернатива:** Опытные участники могут взаимодействовать напрямую через [GitHub Projects](https://github.com/orgs/RooVetGit/projects/1).
+- **Альтернатива:** Опытные участники могут взаимодействовать напрямую через [GitHub Projects](https://github.com/orgs/RooCodeInc/projects/1).
 
 ## Поиск и планирование вклада
 
@@ -60,7 +60,7 @@ Apex — проект, управляемый сообществом, и мы в
 
 Весь вклад должен начинаться с GitHub Issue.
 
-- **Проверь существующие issues:** Поищи в [GitHub Issues](https://github.com/RooVetGit/Roo-Code/issues).
+- **Проверь существующие issues:** Поищи в [GitHub Issues](https://github.com/RooCodeInc/Roo-Code/issues).
 - **Создай issue:** Используй подходящие шаблоны:
     - **Баги:** Шаблон "Bug Report".
     - **Функции:** Шаблон "Detailed Feature Proposal". Требуется одобрение перед началом.
@@ -70,14 +70,14 @@ Apex — проект, управляемый сообществом, и мы в
 
 ### Решение, над чем работать
 
-- Проверь [GitHub проект](https://github.com/orgs/RooVetGit/projects/1) на наличие незанятых "Good First Issues".
-- Для документации посети [Apex Docs](https://github.com/RooVetGit/Roo-Code-Docs).
+- Проверь [GitHub проект](https://github.com/orgs/RooCodeInc/projects/1) на наличие незанятых "Good First Issues".
+- Для документации посети [Apex Docs](https://github.com/RooCodeInc/Roo-Code-Docs).
 
 ### Сообщение об ошибках
 
 - Сначала проверь существующие сообщения.
-- Создай новые сообщения об ошибках, используя [шаблон "Bug Report"](https://github.com/RooVetGit/Roo-Code/issues/new/choose).
-- **Уязвимости безопасности:** Сообщай приватно через [security advisories](https://github.com/RooVetGit/Roo-Code/security/advisories/new).
+- Создай новые сообщения об ошибках, используя [шаблон "Bug Report"](https://github.com/RooCodeInc/Roo-Code/issues/new/choose).
+- **Уязвимости безопасности:** Сообщай приватно через [security advisories](https://github.com/RooCodeInc/Roo-Code/security/advisories/new).
 
 ## Процесс разработки и отправки
 
